@@ -2,7 +2,7 @@ import { cloneDeep } from "lodash";
 
 // 选择排序的思路是 每次找到最小的数，放到数组的最前面
 
-// 找最小的数同时排除掉已经排序过的数
+// 找最小的数
 const findMin = (arr: number[]) => {
   let minItem = arr[0];
   let minCurrent = 0;
