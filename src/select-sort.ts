@@ -23,11 +23,9 @@ const findMin = (arr: number[]) => {
 const selectSort = (arr: number[]) => {
   const reArr: number[] = cloneDeep(arr);
   const sortArr: number[] = [];
-  const minArrCurrent: number[] = [];
   for (let i = 0; i < arr.length; i++) {
     const { min, current } = findMin(reArr);
     if (typeof min === "number" && typeof current === "number") {
-      minArrCurrent.push(current);
       sortArr.push(min);
       reArr.splice(current, 1);
     }
