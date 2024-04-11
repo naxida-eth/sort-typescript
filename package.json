@@ -2,11 +2,20 @@
   "name": "sort-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "select-sort.js",
+  "type": "commonjs",
+  "main": "index.ts",
   "scripts": {
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.0",
+    "lodash": "^4.17.21"
+  }
 }
